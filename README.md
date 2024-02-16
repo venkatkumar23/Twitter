@@ -48,6 +48,8 @@ Status code
 Body
 
 User created successfully
+
+
 API 2
 Path: /login/
 Method: POST
@@ -112,6 +114,9 @@ Invalid JWT Token
 Scenario 2
 
 After successful verification of JWT token, proceed to next middleware or handler
+
+
+
 API 3
 Path: /user/tweets/feed/
 Method: GET
@@ -127,6 +132,9 @@ Response
    },
    ...
  ]
+
+
+
 API 4
 Path: /user/following/
 Method: GET
@@ -140,6 +148,8 @@ Response
   },
   ...
 ]
+
+
 API 5
 Path: /user/followers/
 Method: GET
@@ -153,6 +163,8 @@ Response
   },
   ...
 ]
+
+
 API 6
 Path: /tweets/:tweetId/
 Method: GET
@@ -182,6 +194,9 @@ Response
    "replies": 1,
    "dateTime": "2021-04-07 14:50:19"
 }
+
+
+
 API 7
 Path: /tweets/:tweetId/likes/
 Method: GET
@@ -208,6 +223,9 @@ Response
 {
    "likes": ["albert", ]
 }
+
+
+
 API 8
 Path: /tweets/:tweetId/replies/
 Method: GET
@@ -241,6 +259,9 @@ Response
     ...]
 }
 ```
+
+
+
 API 9
 Path: /user/tweets/
 Method: GET
@@ -257,6 +278,9 @@ Response
   },
   ...
 ]
+
+
+
 API 10
 Path: /user/tweets/
 Method: POST
